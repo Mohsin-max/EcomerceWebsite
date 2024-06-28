@@ -1,0 +1,33 @@
+<app-header2></app-header2>
+<div class="container">
+
+    <div class="row">
+
+        <div class="column text-center py-5">
+
+            <h1>CATEGORY</h1>
+
+        </div>
+
+        <div class="row">
+
+            <div class="column d-flex justify-content-center flex-wrap pb-5">
+
+                <div class="card" style="width: 18rem;" *ngFor="let item of filterdCategoryData">
+                    <img src="data:{{item.finalImage}};base64,{{item.finalImage}}"
+                        height="280px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.subCategory}}</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div class="container">
+
+    <div class="row">
+
+        <div class="column py-5">
+
+            <h1 class="text-center">DEPARTMENTS</h1>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="column d-flex justify-content-center flex-wrap">
+
+            <div class="card" style="width: 18rem;" *ngFor="let departmentData of allDepartmentData">
+
+                <a routerLink="category/{{departmentData.deptName}}">
+
+                    <img src="data:{{departmentData.finalImage}};base64,{{departmentData.finalImage}}" height="300px"
+                        class="card-img-top" alt="...">
+
+                </a>
+                <div class="card-body">
+                    <h4 class="card-text">{{departmentData.deptName}}</h4>
+                    <p class="card-text">{{departmentData.updatedDate}}</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,18 @@
+.column{
+    gap: 100px;
+    padding-bottom: 40px;
+}
+
+.card{
+    transition: 0.5s;
+}
+
+.card:hover{
+
+    scale: 1.05;
+
+}
+
+.card p{
+    color: rgb(86, 86, 86);
+}

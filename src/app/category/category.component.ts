@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CategoryComponent implements OnInit{
 
 
-  constructor(private categoryservice:CategoryService,private route:ActivatedRoute){}
+  constructor(private category:CategoryService,private route:ActivatedRoute){}
 
   allCategoryData:any[]=[]; // ye ek blank array banaya h jis m hum pehle sari categories dale ge 
   filterdCategoryData:any[]=[]
@@ -19,11 +19,11 @@ export class CategoryComponent implements OnInit{
     
     let param = this.route.snapshot.paramMap.get("name"); // is line se hum vo jo path se hum url m name bhej rhe the ab use catch kr rhe h or upar humne activedroute jo inject kiya h vo bss help krta h url se catch krne m 
 
-    this.categoryservice.getCategoryData().subscribe((response)=>{
+    this.category.getCategoryData().subscribe((response)=>{
 
       this.allCategoryData = response
                    
-      // ye loop chala rhe h hum allCategoryData ke liye iske andr sari category h humari hum loop se har category ko check kre ge 
+    //   ye loop chala rhe h hum allCategoryData ke liye iske andr sari category h humari hum loop se har category ko check kre ge 
 
       for (let i = 0; i < this.allCategoryData.length; i++) {
 

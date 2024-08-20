@@ -14,4 +14,12 @@ export class DepartmentService {
     return this.http.get<any>("https://cp.fsglobaltech.com:8443/FASHION_API/departments/findAll");
 
   }
+
+  // getCountryApi():Observable<any>{
+
+  //   return this.http.get<any>(`https://cp.fsglobaltech.com:8443/FOODY_API/country/findAll`);
+
+  // }
 }
+
+
